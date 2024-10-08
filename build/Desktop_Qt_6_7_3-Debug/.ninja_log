@@ -1,0 +1,23 @@
+# ninja log v6
+3	256	1728368175170231946	build.ninja	decc2781d036f532
+4	16	1728367981498513591	baroCache_autogen/timestamp	4af8488c169e9060
+4	16	1728367981498513591	baroCache_autogen/mocs_compilation.cpp	4af8488c169e9060
+350	2481	1728367000062982042	CMakeFiles/baroCache.dir/BaroCache.cpp.o	359c9a3fb5351302
+14	21	1728367188245743731	CMakeFiles/baroCache.dir/baroCache_autogen/mocs_compilation.cpp.o	9559771eda3a8d5a
+4	16	1728367981498513591	/home/kebekus/Software/projects/flightRouteImport/build/Desktop_Qt_6_7_3-Debug/baroCache_autogen/timestamp	4af8488c169e9060
+4	16	1728367981498513591	/home/kebekus/Software/projects/flightRouteImport/build/Desktop_Qt_6_7_3-Debug/baroCache_autogen/mocs_compilation.cpp	4af8488c169e9060
+17	2072	1728367932126839374	CMakeFiles/baroCache.dir/main.cpp.o	85f9ff824119ac95
+350	2602	1728367000062982042	CMakeFiles/baroCache.dir/Distance.cpp.o	5d1fdc5bb4eeb58
+1930	2202	1728367983424500815	baroCache	7626bbcf07382915
+19	1725	1728367112843237873	CMakeFiles/baroCache.dir/DataFileAbstract.cpp.o	fc6a647e64718783
+17	1930	1728367981511513505	CMakeFiles/baroCache.dir/PLN.cpp.o	8adc414f89cf334d
+18	1947	1728367148625003023	CMakeFiles/baroCache.dir/CSV.cpp.o	39baa06ea364be0d
+1	14	1728368176387223922	flightRouteImport_autogen/timestamp	b307add69ff8ed30
+1	14	1728368176387223922	flightRouteImport_autogen/mocs_compilation.cpp	b307add69ff8ed30
+1	14	1728368176387223922	/home/kebekus/Software/projects/flightRouteImport/build/Desktop_Qt_6_7_3-Debug/flightRouteImport_autogen/timestamp	b307add69ff8ed30
+1	14	1728368176387223922	/home/kebekus/Software/projects/flightRouteImport/build/Desktop_Qt_6_7_3-Debug/flightRouteImport_autogen/mocs_compilation.cpp	b307add69ff8ed30
+15	24	1728368176389223908	CMakeFiles/flightRouteImport.dir/flightRouteImport_autogen/mocs_compilation.cpp.o	46bd9b2fedcead6c
+15	1951	1728368176389223908	CMakeFiles/flightRouteImport.dir/DataFileAbstract.cpp.o	226a14949a1f0e9f
+15	2175	1728368176389223908	CMakeFiles/flightRouteImport.dir/PLN.cpp.o	e9ceb4bd55da5de3
+15	2257	1728368176389223908	CMakeFiles/flightRouteImport.dir/main.cpp.o	1edfc39d12582a44
+2257	2353	1728368178631209125	flightRouteImport	76a8f791a9ae411e

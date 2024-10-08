@@ -1,0 +1,9 @@
+/home/kebekus/Software/projects/flightRouteImport/build/Desktop_Qt_6_7_3-Debug/CMakeFiles/flightRouteImport.dir
+/home/kebekus/Software/projects/flightRouteImport/build/Desktop_Qt_6_7_3-Debug/CMakeFiles/edit_cache.dir
+/home/kebekus/Software/projects/flightRouteImport/build/Desktop_Qt_6_7_3-Debug/CMakeFiles/rebuild_cache.dir
+/home/kebekus/Software/projects/flightRouteImport/build/Desktop_Qt_6_7_3-Debug/CMakeFiles/list_install_components.dir
+/home/kebekus/Software/projects/flightRouteImport/build/Desktop_Qt_6_7_3-Debug/CMakeFiles/install.dir
+/home/kebekus/Software/projects/flightRouteImport/build/Desktop_Qt_6_7_3-Debug/CMakeFiles/install/local.dir
+/home/kebekus/Software/projects/flightRouteImport/build/Desktop_Qt_6_7_3-Debug/CMakeFiles/install/strip.dir
+/home/kebekus/Software/projects/flightRouteImport/build/Desktop_Qt_6_7_3-Debug/CMakeFiles/flightRouteImport_autogen_timestamp_deps.dir
+/home/kebekus/Software/projects/flightRouteImport/build/Desktop_Qt_6_7_3-Debug/CMakeFiles/flightRouteImport_autogen.dir

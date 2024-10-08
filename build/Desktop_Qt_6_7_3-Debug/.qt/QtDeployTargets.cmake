@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_flightRouteImport_FILE /home/kebekus/Software/projects/flightRouteImport/build/Desktop_Qt_6_7_3-Debug/flightRouteImport)
+set(__QT_DEPLOY_TARGET_flightRouteImport_TYPE EXECUTABLE)

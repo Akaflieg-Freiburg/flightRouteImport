@@ -17,9 +17,8 @@ add_executable(flightRouteImport
     PLN.cpp
     DataFileAbstract.h
     DataFileAbstract.cpp
-
-
-
+    FPL.h
+    FPL.cpp
 
     main.cpp
 )

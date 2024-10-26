@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SimBase.Document Type="AceXML" version="1,0">
+  <Descr>AceXML Document</Descr>
+  <FlightPlan.FlightPlan>
+    <Title>EGPF to EGSS</Title>
+    <FPType>IFR</FPType>
+    <RouteType>HighAlt</RouteType>
+    <CruisingAlt>28000</CruisingAlt>
+    <DepartureID>EGPF</DepartureID>
+    <DepartureLLA>N55° 52' 19.00",W004° 25' 59.00",+000026.00</DepartureLLA>
+    <DestinationID>EGSS</DestinationID>
+    <DestinationLLA>N51° 53' 06.00",E000° 14' 06.00",+000348.00</DestinationLLA>
+    <Descr>EGPF, EGSS</Descr>
+    <DeparturePosition>1</DeparturePosition>
+    <DepartureName>GLASGOW</DepartureName>
+    <DestinationName>LONDON STANSTED</DestinationName>
+    <AppVersion>
+      <AppVersionMajor>10</AppVersionMajor>
+      <AppVersionBuild>61637</AppVersionBuild>
+    </AppVersion>
+    <ATCWaypoint id="EGPF">
+      <ATCWaypointType>Airport</ATCWaypointType>
+      <WorldPosition>N55° 52' 19.00",W004° 25' 59.00",+000026.00</WorldPosition>
+      <ICAO>
+        <ICAOIdent>EGPF</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="LUSIV">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N55° 40' 01.99",W004° 14' 41.00",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>LUSIV</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="ELBUS">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N55° 29' 43.00",W004° 04' 36.00",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>ELBUS</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="NAVSO">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N55° 13' 22.00",W003° 48' 49.00",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>NAVSO</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="BEBNI">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N54° 59' 05.99",W003° 35' 13.99",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>BEBNI</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="DCS">
+      <ATCWaypointType>VOR</ATCWaypointType>
+      <WorldPosition>N54° 43' 19.00",W003° 20' 25.99",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>DCS</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="LAKEY">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N54° 14' 19.99",W002° 58' 52.00",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>LAKEY</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="VAMEB">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N54° 00' 10.00",W002° 48' 31.99",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>VAMEB</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="OBUNI">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N53° 54' 40.00",W002° 44' 33.00",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>OBUNI</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="CALDA">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N53° 46' 26.99",W002° 38' 37.99",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>CALDA</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="CROFT">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N53° 37' 37.00",W002° 32' 19.99",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>CROFT</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="BARTN">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N53° 28' 14.00",W002° 25' 40.99",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>BARTN</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="LOVEL">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N53° 15' 05.99",W002° 16' 27.99",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>LOVEL</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="LISTO">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N53° 08' 35.99",W002° 11' 57.00",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>LISTO</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="EGSS">
+      <ATCWaypointType>Airport</ATCWaypointType>
+      <WorldPosition>N51° 53' 06.00",E000° 14' 06.00",+000348.00</WorldPosition>
+      <ICAO>
+        <ICAOIdent>EGSS</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+  </FlightPlan.FlightPlan>
+</SimBase.Document>

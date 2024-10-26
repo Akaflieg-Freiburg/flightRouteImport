@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SimBase.Document Type="AceXML" version="1,0">
+	<Descr>AceXML Document</Descr>
+	<FlightPlan.FlightPlan>
+		<Title>EGAA to EGKK</Title>
+		<FPType>IFR</FPType>
+		<RouteType>HighAlt</RouteType>
+		<CruisingAlt>23000</CruisingAlt>
+		<DepartureID>EGAA</DepartureID>
+		<DepartureLLA>N54° 39' 14.04",W6° 13' 11.78",+000000.00</DepartureLLA>
+		<DestinationID>EGKK</DestinationID>
+		<DestinationLLA>N51° 8' 55.68",W0° 11' 30.92",+000000.00</DestinationLLA>
+		<Descr>EGAA, EGKK</Descr>
+		<DeparturePosition>1</DeparturePosition>
+		<DepartureName>Belfast International</DepartureName>
+		<DestinationName>London Gatwick</DestinationName>
+		<AppVersion>
+			<AppVersionMajor>10</AppVersionMajor>
+			<AppVersionBuild>3708</AppVersionBuild>
+		</AppVersion>
+		<ATCWaypoint id="EGAA">
+			<ATCWaypointType>Airport</ATCWaypointType>
+			<WorldPosition>N54° 39' 14.04",W6° 13' 11.78",+000000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>EGAA</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="GIGTO">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N53° 38' 0.96",W4° 5' 51.00",+023000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>GIGTO</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="MALUD">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N53° 24' 47.88",W3° 36' 29.99",+023000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>MALUD</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="EPOXI">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N53° 19' 59.16",W3° 27' 18.00",+023000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>EPOXI</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="AMPIT">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N53° 11' 39.12",W3° 11' 33.00",+023000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>AMPIT</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="RISLA">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N53° 1' 50.88",W2° 53' 12.01",+023000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>RISLA</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="KEPAD">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N52° 48' 34.92",W2° 28' 44.00",+023000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>KEPAD</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="TELBA">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N52° 39' 51.84",W2° 19' 7.00",+023000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>TELBA</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="VIDOK">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N52° 24' 38.88",W2° 2' 30.98",+021900.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>VIDOK</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="EGKK">
+			<ATCWaypointType>Airport</ATCWaypointType>
+			<WorldPosition>N51° 8' 55.68",W0° 11' 30.92",+000000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>EGKK</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+	</FlightPlan.FlightPlan>
+</SimBase.Document>

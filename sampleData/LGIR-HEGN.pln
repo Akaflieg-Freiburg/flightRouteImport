@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SimBase.Document Type="AceXML" version="1,0">
+	<Descr>AceXML Document</Descr>
+	<FlightPlan.FlightPlan>
+		<Title>LGIR to HEGN</Title>
+		<FPType>IFR</FPType>
+		<RouteType>HighAlt</RouteType>
+		<CruisingAlt>35000</CruisingAlt>
+		<DepartureID>LGIR</DepartureID>
+		<DepartureLLA>N35° 20' 23.64",E25° 10' 41.52",+000000.00</DepartureLLA>
+		<DestinationID>HEGN</DestinationID>
+		<DestinationLLA>N27° 10' 39.00",E33° 47' 46.68",+000000.00</DestinationLLA>
+		<Descr>LGIR, HEGN</Descr>
+		<DeparturePosition>1</DeparturePosition>
+		<DepartureName>Iraklion - Nikos Kazantzakis</DepartureName>
+		<DestinationName>Hurghada Intl</DestinationName>
+		<AppVersion>
+			<AppVersionMajor>10</AppVersionMajor>
+			<AppVersionBuild>3708</AppVersionBuild>
+		</AppVersion>
+		<ATCWaypoint id="LGIR">
+			<ATCWaypointType>Airport</ATCWaypointType>
+			<WorldPosition>N35° 20' 23.64",E25° 10' 41.52",+000000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>LGIR</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="SIT">
+			<ATCWaypointType>VOR</ATCWaypointType>
+			<WorldPosition>N35° 4' 6.24",E26° 11' 20.76",+018600.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>SIT</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="PAXIS">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N33° 57' 6.12",E27° 19' 59.88",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>PAXIS</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="GESAD">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N32° 56' 40.92",E28° 20' 6.00",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>GESAD</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="OTIKO">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N31° 34' 21.00",E29° 36' 36.00",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>OTIKO</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="NOZ">
+			<ATCWaypointType>VOR</ATCWaypointType>
+			<WorldPosition>N31° 11' 15.36",E29° 57' 2.52",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>NOZ</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="MENKU">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N31° 5' 30.84",E30° 18' 6.12",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>MENKU</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="CVO">
+			<ATCWaypointType>VOR</ATCWaypointType>
+			<WorldPosition>N30° 5' 32.28",E31° 23' 18.24",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>CVO</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="SOLAM">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N29° 42' 1.08",E31° 31' 5.88",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>SOLAM</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="RASMI">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N28° 59' 0.96",E31° 45' 6.12",+035000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>RASMI</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="SEMRU">
+			<ATCWaypointType>Intersection</ATCWaypointType>
+			<WorldPosition>N28° 1' 59.88",E32° 3' 6.12",+022700.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>SEMRU</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+		<ATCWaypoint id="HEGN">
+			<ATCWaypointType>Airport</ATCWaypointType>
+			<WorldPosition>N27° 10' 39.00",E33° 47' 46.68",+000000.00</WorldPosition>
+			<ICAO>
+				<ICAOIdent>HEGN</ICAOIdent>
+			</ICAO>
+		</ATCWaypoint>
+	</FlightPlan.FlightPlan>
+</SimBase.Document>

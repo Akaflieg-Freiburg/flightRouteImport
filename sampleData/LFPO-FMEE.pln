@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SimBase.Document Type="AceXML" version="1,0">
+  <Descr>AceXML Document</Descr>
+  <FlightPlan.FlightPlan>
+    <Title>LFPO to FMEE</Title>
+    <FPType>IFR</FPType>
+    <RouteType>HighAlt</RouteType>
+    <CruisingAlt>33000</CruisingAlt>
+    <DepartureID>LFPO</DepartureID>
+    <DepartureLLA>N48° 43' 23.81",E002° 22' 46.48",+000291.00</DepartureLLA>
+    <DestinationID>FMEE</DestinationID>
+    <DestinationLLA>S20° 53' 24.00",E055° 30' 59.00",+000066.00</DestinationLLA>
+    <Descr>LFPO, FMEE</Descr>
+    <DeparturePosition>1</DeparturePosition>
+    <DepartureName>PARIS ORLY</DepartureName>
+    <DestinationName>LA REUNION-ROLAND GARROS</DestinationName>
+    <AppVersion>
+      <AppVersionMajor>10</AppVersionMajor>
+      <AppVersionBuild>61637</AppVersionBuild>
+    </AppVersion>
+    <ATCWaypoint id="LFPO">
+      <ATCWaypointType>Airport</ATCWaypointType>
+      <WorldPosition>N48° 43' 23.81",E002° 22' 46.48",+000291.00</WorldPosition>
+      <ICAO>
+        <ICAOIdent>LFPO</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="PILUL">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N48° 05' 00.00",E003° 02' 52.99",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>PILUL</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="AVLON">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N47° 33' 36.00",E003° 48' 48.00",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>AVLON</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="LUSAR">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N46° 40' 07.99",E005° 10' 46.00",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>LUSAR</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="SAUNI">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N46° 37' 24.99",E005° 28' 40.00",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>SAUNI</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="LIRKO">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N46° 34' 14.99",E005° 48' 52.00",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>LIRKO</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="DINIG">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N46° 29' 42.99",E005° 53' 25.99",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>DINIG</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="SOVAD">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N46° 20' 14.99",E006° 02' 53.99",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>SOVAD</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="GVA">
+      <ATCWaypointType>VOR</ATCWaypointType>
+      <WorldPosition>N46° 15' 13.99",E006° 07' 56.00",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>GVA</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="MOBLO">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N45° 48' 34.99",E006° 43' 22.00",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>MOBLO</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="LURAG">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N45° 31' 39.99",E007° 05' 19.99",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>LURAG</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="VEROB">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N45° 17' 43.99",E007° 23' 21.99",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>VEROB</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="TOP">
+      <ATCWaypointType>VOR</ATCWaypointType>
+      <WorldPosition>N44° 55' 31.00",E007° 51' 41.99",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>TOP</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="NEDED">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N44° 41' 37.99",E008° 08' 26.00",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>NEDED</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="LAGEN">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N44° 23' 38.99",E008° 29' 53.00",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>LAGEN</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="ANAKI">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N44° 12' 03.99",E008° 43' 31.99",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>ANAKI</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="IXITO">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N44° 08' 05.00",E008° 48' 13.00",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>IXITO</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="UNITA">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N43° 56' 39.99",E009° 01' 30.00",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>UNITA</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="TIDKA">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N43° 47' 59.99",E009° 11' 31.00",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>TIDKA</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="KONER">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N43° 30' 17.00",E009° 31' 47.99",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>KONER</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="EVROG">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N43° 15' 16.00",E009° 48' 47.00",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>EVROG</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="BAKRO">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N43° 11' 17.00",E009° 53' 14.99",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>BAKRO</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="ELB">
+      <ATCWaypointType>VOR</ATCWaypointType>
+      <WorldPosition>N42° 43' 49.99",E010° 23' 45.00",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>ELB</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="ROTIR">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N42° 13' 09.00",E010° 47' 08.99",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>ROTIR</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="GISPA">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N41° 48' 18.99",E011° 20' 32.00",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>GISPA</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="ROTUN">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N40° 52' 59.99",E012° 18' 19.99",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>ROTUN</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="NERAR">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N39° 18' 15.00",E014° 16' 00.99",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>NERAR</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="RCA">
+      <ATCWaypointType>NDB</ATCWaypointType>
+      <WorldPosition>N38° 04' 36.00",E015° 38' 43.00",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>RCA</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="DODEL">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N37° 36' 05.99",E016° 11' 32.00",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>DODEL</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="ABAKO">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N37° 11' 01.99",E016° 39' 57.99",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>ABAKO</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="VENIM">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N36° 30' 00.00",E017° 25' 32.99",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>VENIM</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="BINKO">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N35° 47' 20.99",E018° 11' 47.00",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>BINKO</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="EMLAR">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N35° 37' 54.00",E018° 17' 18.00",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>EMLAR</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="INBIN">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N35° 16' 07.00",E018° 30' 00.00",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>INBIN</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="KUTOS">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N35° 06' 25.99",E018° 35' 37.99",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>KUTOS</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="BONAR">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N34° 20' 00.00",E019° 02' 12.99",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>BONAR</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="RAMLI">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N33° 43' 00.00",E019° 22' 59.99",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>RAMLI</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="PUFER">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N32° 59' 00.99",E019° 47' 48.00",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>PUFER</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="ATOLL">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N32° 45' 00.00",E019° 54' 53.99",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>ATOLL</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="BNA">
+      <ATCWaypointType>VOR</ATCWaypointType>
+      <WorldPosition>N32° 07' 27.99",E020° 15' 13.00",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>BNA</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="ARADA">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N30° 46' 36.00",E021° 33' 47.99",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>ARADA</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="DITAR">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N26° 59' 05.99",E025° 00' 00.00",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>DITAR</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="TULOP">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N25° 22' 09.00",E026° 22' 25.99",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>TULOP</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="ATMUL">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N22° 00' 00.00",E029° 05' 29.99",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>ATMUL</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="UMIDA">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N18° 51' 15.00",E031° 17' 03.99",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>UMIDA</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="KUVTI">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N16° 31' 52.00",E032° 50' 25.00",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>KUVTI</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="TIKAT">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N12° 24' 17.99",E035° 38' 11.99",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>TIKAT</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="ANTUM">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N11° 44' 07.00",E036° 06' 16.99",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>ANTUM</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="APLIR">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N10° 26' 42.99",E036° 59' 49.00",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>APLIR</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="ETONI">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N10° 00' 44.00",E037° 17' 39.00",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>ETONI</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="ETOKO">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N09° 08' 16.00",E037° 53' 26.99",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>ETOKO</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="GETIN">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N08° 56' 08.99",E038° 01' 40.00",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>GETIN</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="ITPOG">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N08° 44' 05.99",E038° 09' 50.99",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>ITPOG</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="ETIVA">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N08° 23' 16.99",E038° 23' 50.00",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>ETIVA</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="GETOL">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N08° 10' 47.99",E038° 32' 17.00",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>GETOL</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="MASLO">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N07° 24' 58.00",E039° 03' 15.00",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>MASLO</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="UVDEB">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N06° 26' 19.99",E039° 50' 52.99",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>UVDEB</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="UTSOR">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N06° 13' 35.99",E040° 02' 18.00",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>UTSOR</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="IBTAN">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N05° 12' 18.00",E040° 50' 44.99",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>IBTAN</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="MAV">
+      <ATCWaypointType>VOR</ATCWaypointType>
+      <WorldPosition>N03° 56' 24.99",E041° 51' 51.00",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>MAV</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="TULAP">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N01° 18' 33.99",E043° 34' 50.99",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>TULAP</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="RAGGS">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>N00° 19' 30.00",E044° 09' 35.99",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>RAGGS</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="ITLOX">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>S01° 10' 18.99",E045° 01' 34.00",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>ITLOX</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="MITCH">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>S02° 00' 00.00",E045° 31' 36.66",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>MITCH</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="ANTIS">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>S04° 11' 54.89",E046° 53' 52.89",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>ANTIS</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="UVESO">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>S07° 00' 00.00",E048° 39' 35.74",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>UVESO</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="ANKOR">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>S10° 00' 00.00",E050° 34' 41.99",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>ANKOR</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="UVDUK">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>S11° 40' 22.00",E051° 39' 48.00",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>UVDUK</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="IXEBU">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>S12° 07' 15.99",E051° 24' 35.99",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>IXEBU</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="MIDRI">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>S13° 26' 02.00",E052° 00' 00.00",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>MIDRI</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="MAEVA">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>S16° 23' 44.99",E053° 21' 30.99",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>MAEVA</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="ANVOR">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>S18° 05' 51.00",E054° 09' 34.00",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>ANVOR</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="UVENA">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>S18° 36' 21.90",E054° 23' 58.69",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>UVENA</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="FMEE">
+      <ATCWaypointType>Airport</ATCWaypointType>
+      <WorldPosition>S20° 53' 24.00",E055° 30' 59.00",+000066.00</WorldPosition>
+      <ICAO>
+        <ICAOIdent>FMEE</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+  </FlightPlan.FlightPlan>
+</SimBase.Document>

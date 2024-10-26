@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SimBase.Document Type="AceXML" version="1,0">
+  <Descr>AceXML Document</Descr>
+  <FlightPlan.FlightPlan>
+    <Title>SBKP to SBPP</Title>
+    <FPType>IFR</FPType>
+    <RouteType>HighAlt</RouteType>
+    <CruisingAlt>38000</CruisingAlt>
+    <DepartureID>SBKP</DepartureID>
+    <DepartureLLA>S23° 00' 25.00",W047° 08' 04.00",+002170.00</DepartureLLA>
+    <DestinationID>SBPP</DestinationID>
+    <DestinationLLA>S22° 32' 59.00",W055° 42' 11.00",+002156.00</DestinationLLA>
+    <Descr>SBKP, SBPP</Descr>
+    <DeparturePosition>1</DeparturePosition>
+    <DepartureName>VIRACOPOS</DepartureName>
+    <DestinationName>PONTA PORA</DestinationName>
+    <AppVersion>
+      <AppVersionMajor>10</AppVersionMajor>
+      <AppVersionBuild>61637</AppVersionBuild>
+    </AppVersion>
+    <ATCWaypoint id="SBKP">
+      <ATCWaypointType>Airport</ATCWaypointType>
+      <WorldPosition>S23° 00' 25.00",W047° 08' 04.00",+002170.00</WorldPosition>
+      <ICAO>
+        <ICAOIdent>SBKP</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="EGEVA">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>S23° 08' 22.99",W048° 33' 41.00",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>EGEVA</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="ESAVA">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>S22° 56' 54.00",W049° 09' 45.00",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>ESAVA</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="VULRU">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>S22° 53' 51.00",W049° 18' 04.99",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>VULRU</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="KNAVE">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>S22° 50' 44.00",W049° 28' 08.99",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>KNAVE</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="DEXOV">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>S22° 43' 25.00",W049° 49' 55.99",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>DEXOV</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="EVNES">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>S22° 38' 10.00",W050° 05' 25.99",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>EVNES</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="ANGIP">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>S22° 34' 58.00",W050° 14' 54.99",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>ANGIP</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="PRR">
+      <ATCWaypointType>VOR</ATCWaypointType>
+      <WorldPosition>S22° 10' 22.00",W051° 25' 31.99",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>PRR</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="ROKOR">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>S21° 52' 48.99",W052° 16' 18.99",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>ROKOR</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="OPSAS">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>S21° 42' 20.99",W052° 46' 06.99",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>OPSAS</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="FIGOS">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>S21° 27' 14.99",W053° 28' 32.99",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>FIGOS</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="VUMUB">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>S21° 38' 30.99",W053° 40' 04.99",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>VUMUB</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="KABEG">
+      <ATCWaypointType>Intersection</ATCWaypointType>
+      <WorldPosition>S22° 33' 01.99",W054° 36' 28.99",+000000.00</WorldPosition>
+      <ICAO>
+        <ICAORegion>KK</ICAORegion>
+        <ICAOIdent>KABEG</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+    <ATCWaypoint id="SBPP">
+      <ATCWaypointType>Airport</ATCWaypointType>
+      <WorldPosition>S22° 32' 59.00",W055° 42' 11.00",+002156.00</WorldPosition>
+      <ICAO>
+        <ICAOIdent>SBPP</ICAOIdent>
+      </ICAO>
+    </ATCWaypoint>
+  </FlightPlan.FlightPlan>
+</SimBase.Document>

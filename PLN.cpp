@@ -76,7 +76,8 @@ FileFormats::PLN::PLN(const QString& fileName)
     int count2 = 0;
     int count3 = 0;
     QString pos;
-    QGeoCoordinate waypoint;
+    QString id;
+    QGeoCoordinate coord;
     QStringList split;
     auto file = FileFormats::DataFileAbstract::openFileURL(fileName);
     auto success = file->open(QIODevice::ReadOnly);
@@ -117,6 +118,7 @@ FileFormats::PLN::PLN(const QString& fileName)
                 else
                 {
                     count2++;
+                    id = xmlReader.attributes().value(u"id"_qs).toString();
                     count3 = 0;
                     while(xmlReader.readNextStartElement())
                     {
@@ -135,15 +137,14 @@ FileFormats::PLN::PLN(const QString& fileName)
                                 {
                                     throw 1;
                                 }
-                                waypoint.setLatitude(convertPDMSToDecimal(split[0]));
-                                waypoint.setLongitude(convertPDMSToDecimal(split[1]));
-                                waypoint.setAltitude(split[2].toDouble(&ok));
+                                coord.setLatitude(convertPDMSToDecimal(split[0]));
+                                coord.setLongitude(convertPDMSToDecimal(split[1]));
+                                coord.setAltitude(split[2].toDouble(&ok));
                                 if (!ok)
                                 {
                                     throw 5;
                                 }
-#warning Stefan: habe hier herumgepfuscht
-                                m_waypoints.append(GeoMaps::Waypoint(waypoint, u"dummy"_qs));
+                                m_waypoints.append(GeoMaps::Waypoint(coord, id));
                             }
                             catch (...)
                             {

@@ -23,6 +23,7 @@
 #include <QGeoCoordinate>
 
 #include "DataFileAbstract.h"
+#include "Waypoint.h"
 
 
 namespace FileFormats
@@ -57,7 +58,7 @@ public:
      *
      *  @returns Waypoints specified in the FPL file
      */
-    [[nodiscard]] QVector<QGeoCoordinate> waypoints() const { return m_waypoints; }
+    [[nodiscard]] QVector<GeoMaps::Waypoint> waypoints() const { return m_waypoints; }
 
 
     //
@@ -71,7 +72,7 @@ public:
     [[nodiscard]] static QStringList mimeTypes() { return {u"text/xml"_qs, u"text/plain"_qs}; }
 
 private:
-    QVector<QGeoCoordinate> m_waypoints;
+    QVector<GeoMaps::Waypoint> m_waypoints;
 };
 
 } // namespace FileFormats

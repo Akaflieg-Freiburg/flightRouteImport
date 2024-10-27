@@ -1,5 +1,5 @@
 /***************************************************************************
- *   Copyright (C) 2024 by Stefan Kebekus                                  *
+ *   Copyright (C) 2019-2023 by Stefan Kebekus                             *
  *   stefan.kebekus@gmail.com                                              *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
@@ -22,57 +22,16 @@
 
 #include <QGeoCoordinate>
 
-#include "DataFileAbstract.h"
-#include "Waypoint.h"
+namespace GeoMaps {
 
-
-namespace FileFormats
+class Waypoint
 {
-
-/*! \brief PLN file support class
- *
- *  The methods of this class read PLN files.
- */
-
-class PLN : public DataFileAbstract
-{
-
 public:
-    /*! \brief Constructor
-     *
-     *  This method reads a PLN file.
-     *
-     *  @param fileName Name of a PLN file
-     */
-    PLN(const QString& fileName);
 
+    Waypoint(const QGeoCoordinate& coord, const QString& name) : m_coordinate(coord), m_name(name) {}
 
-
-    //
-    // Getter Methods
-    //
-
-    /*! \brief Waypoints specified in the PLN file
-     *
-     *  The QGeoCoordinates returned here are guaranteed to be valid.
-     *
-     *  @returns Waypoints specified in the PLN file
-     */
-    [[nodiscard]] QVector<GeoMaps::Waypoint> waypoints() const { return m_waypoints; }
-
-
-    //
-    // Static methods
-    //
-
-    /*! \brief Mime type for files that can be opened by this class
-     *
-     *  @returns Name of mime type
-     */
-    [[nodiscard]] static QStringList mimeTypes() { return {u"text/xml"_qs, u"text/plain"_qs}; }
-
-private:
-    QVector<GeoMaps::Waypoint> m_waypoints;
+    QGeoCoordinate m_coordinate;
+    QString m_name;
 };
 
-} // namespace FileFormats
+} // namespace GeoMaps

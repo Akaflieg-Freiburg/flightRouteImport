@@ -232,7 +232,8 @@ FileFormats::FPL::FPL(const QString& fileName)
                     waypoint.setLatitude(wplist.at(index).lat);
                     waypoint.setLongitude(wplist.at(index).lon);
                     waypoint.setAltitude(wplist.at(index).elev);
-                    m_waypoints.append(waypoint);
+#warning Stefan: habe hier herumgepfuscht
+                    m_waypoints.append(GeoMaps::Waypoint(waypoint, u"dummy"_qs));
                 }
             }
             if (count3 == 0)

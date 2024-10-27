@@ -25,7 +25,6 @@ auto main(int argc, char *argv[]) -> int
         FileFormats::PLN PLN(parser.positionalArguments().at(0));
         qWarning() << "Errors while reading:" << PLN.error();
         qWarning() << "Warnings while reading:" << PLN.warnings();
-        qWarning() << "Waypoint list:" << PLN.waypoints();
     }
     else
     {
@@ -33,7 +32,6 @@ auto main(int argc, char *argv[]) -> int
         FileFormats::FPL FPL(parser.positionalArguments().at(0));
         qWarning() << "Errors while reading:" << FPL.error();
         qWarning() << "Warnings while reading:" << FPL.warnings();
-        qWarning() << "Waypoint list:" << FPL.waypoints();
     }
 
     return 0;

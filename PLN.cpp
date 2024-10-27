@@ -142,7 +142,8 @@ FileFormats::PLN::PLN(const QString& fileName)
                                 {
                                     throw 5;
                                 }
-                                m_waypoints.append(waypoint);
+#warning Stefan: habe hier herumgepfuscht
+                                m_waypoints.append(GeoMaps::Waypoint(waypoint, u"dummy"_qs));
                             }
                             catch (...)
                             {

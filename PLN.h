@@ -29,9 +29,10 @@
 namespace FileFormats
 {
 
-/*! \brief PLN file support class
+/*! \brief PLN file support classq
  *
- *  The methods of this class read PLN files.
+ *  The methods of this class read PLN files, as specified here:
+ *  https://docs.flightsimulator.com/html/Content_Configuration/qFlights_And_Missions/Flight_Plan_Definitions.htm
  */
 
 class PLN : public DataFileAbstract

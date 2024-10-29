@@ -18,15 +18,7 @@
  *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *
  ***************************************************************************/
 
-
-#include <QFile>
-#include <QList>
-#include <QTextStream>
-#include <qxmlstream.h>
-#include <qnamespace.h>
-#include <qglobal.h>
-#include <qgeocoordinate.h>
-#include <qobject.h>
+#include <QXmlStreamReader>
 
 #include "FPL.h"
 
@@ -36,15 +28,8 @@
 
 FileFormats::FPL::FPL(const QString& fileName)
 {
-    QGeoCoordinate const coord;
-    GeoMaps::Waypoint wpoint(coord, nullptr);
     QList<GeoMaps::Waypoint> wplist;
-    QString id;
-    bool ok = false;
-    int count1 = 0;
-    int count2 = 0;
-    int count3 = 0;
-    int count4 = 0;
+
     auto file = FileFormats::DataFileAbstract::openFileURL(fileName);
     auto success = file->open(QIODevice::ReadOnly);
     if (!success)
@@ -64,14 +49,15 @@ FileFormats::FPL::FPL(const QString& fileName)
         setError(QObject::tr("File %1 does not contain a flight plan", "FileFormats::FPL").arg(fileName));
         return;
     }
-    count1 = 0;
-    count2 = 0;
+
+    int count1 = 0;
+    int count2 = 0;
     while(xmlReader.readNextStartElement())
     {
         if(xmlReader.name().compare("waypoint-table", Qt::CaseInsensitive) == 0)
         {
             count1++;
-            count3 = 0;
+            int count3 = 0;
             while(xmlReader.readNextStartElement())
             {
                 if(xmlReader.name().compare("waypoint", Qt::CaseInsensitive) != 0)
@@ -81,6 +67,7 @@ FileFormats::FPL::FPL(const QString& fileName)
                 else
                 {
                     count3++;
+                    GeoMaps::Waypoint wpoint({}, {});
                     wpoint.m_name = nullptr;
                     wpoint.m_coordinate.setAltitude(NULL);
                     wpoint.m_coordinate.setLatitude(NULL);
@@ -103,6 +90,7 @@ FileFormats::FPL::FPL(const QString& fileName)
                                 setError(QObject::tr("Waypoint %1 has more than one latitude", "FileFormats::FPL").arg(count3));
                                 return;
                             }
+                            bool ok = false;
                             wpoint.m_coordinate.setLatitude(xmlReader.readElementText().toDouble(&ok));
                             if (!ok)
                             {
@@ -117,6 +105,7 @@ FileFormats::FPL::FPL(const QString& fileName)
                                 setError(QObject::tr("Waypoint %1 has more than one longitude", "FileFormats::FPL").arg(count3));
                                 return;
                             }
+                            bool ok = false;
                             wpoint.m_coordinate.setLongitude(xmlReader.readElementText().toDouble(&ok));
                             if (!ok)
                             {
@@ -131,6 +120,7 @@ FileFormats::FPL::FPL(const QString& fileName)
                                 setError(QObject::tr("Waypoint %1 has more than one elevation", "FileFormats::FPL").arg(count3));
                                 return;
                             }
+                            bool ok = false;
                             wpoint.m_coordinate.setAltitude(xmlReader.readElementText().toDouble(&ok));
                             if (!ok)
                             {
@@ -165,7 +155,7 @@ FileFormats::FPL::FPL(const QString& fileName)
         else if (xmlReader.name().compare("route", Qt::CaseInsensitive) == 0)
         {
             count2++;
-            count3 = 0;
+            int count3 = 0;
             while(xmlReader.readNextStartElement())
             {
                 if(xmlReader.name().compare("route-point", Qt::CaseInsensitive) != 0)
@@ -175,7 +165,8 @@ FileFormats::FPL::FPL(const QString& fileName)
                 else
                 {
                     count3++;
-                    count4 = 0;
+                    int count4 = 0;
+                    QString id;
                     while(xmlReader.readNextStartElement())
                     {
                         if(xmlReader.name().compare("waypoint-identifier", Qt::CaseInsensitive) != 0)
@@ -193,7 +184,7 @@ FileFormats::FPL::FPL(const QString& fileName)
                         setError(QObject::tr("Route point %1 does not have a unique waypoint identifier", "FileFormats::FPL").arg(count3));
                         return;
                     }
-                    ok = false;
+                    bool ok = false;
                     for (long i = 0; i < wplist.size(); i++)
                     {
                         if (wplist.at(i).m_name.compare(id) == 0)

@@ -30,9 +30,10 @@ namespace FileFormats
 {
 
 /*! \brief FPL file support class
-*
-*  The methods of this class read FPL files.
-*/
+ *
+ *  The methods of this class read PLN files, as specified here:
+ *  https://docs.flightsimulator.com/html/Content_Configuration/Flights_And_Missions/Flight_Definitions.htm
+ */
 
 class FPL : public DataFileAbstract
 {
@@ -45,7 +46,6 @@ public:
      *  @param fileName Name of a FPL file
      */
     FPL(const QString& fileName);
-
 
 
     //

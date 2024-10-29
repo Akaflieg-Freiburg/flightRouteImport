@@ -100,67 +100,68 @@ FileFormats::PLN::PLN(const QString& fileName)
         if(xmlReader.name().compare("FlightPlan.FlightPlan", Qt::CaseInsensitive) != 0)
         {
             xmlReader.skipCurrentElement();
+            continue;
         }
-        else
+
+        count1++;
+        count2 = 0;
+        while(xmlReader.readNextStartElement())
         {
-            count1++;
-            count2 = 0;
+            if(xmlReader.name().compare("ATCWaypoint", Qt::CaseInsensitive) != 0)
+            {
+                xmlReader.skipCurrentElement();
+                continue;
+            }
+
+            count2++;
+            id = xmlReader.attributes().value(u"id"_qs).toString();
+            count3 = 0;
             while(xmlReader.readNextStartElement())
             {
-                if(xmlReader.name().compare("ATCWaypoint", Qt::CaseInsensitive) != 0)
+                if(xmlReader.name().compare("WorldPosition", Qt::CaseInsensitive) != 0)
                 {
                     xmlReader.skipCurrentElement();
+                    continue;
                 }
-                else
+
+                count3++;
+                pos = xmlReader.readElementText();
+                split = pos.split(u","_qs);
+                try
                 {
-                    count2++;
-                    id = xmlReader.attributes().value(u"id"_qs).toString();
-                    count3 = 0;
-                    while(xmlReader.readNextStartElement())
+                    if (split.size() != 3)
                     {
-                        if(xmlReader.name().compare("WorldPosition", Qt::CaseInsensitive) != 0)
-                        {
-                            xmlReader.skipCurrentElement();
-                        }
-                        else
-                        {
-                            count3++;
-                            pos = xmlReader.readElementText();
-                            split = pos.split(u","_qs);
-                            try
-                            {
-                                if (split.size() != 3)
-                                {
-                                    throw 1;
-                                }
-                                coord.setLatitude(convertPDMSToDecimal(split[0]));
-                                coord.setLongitude(convertPDMSToDecimal(split[1]));
-                                coord.setAltitude(split[2].toDouble(&ok));
-                                if (!ok)
-                                {
-                                    throw 5;
-                                }
-                                m_waypoints.append(GeoMaps::Waypoint(coord, id));
-                            }
-                            catch (...)
-                            {
-                                addWarning(QObject::tr("Position of waypoint %1 is not a valid position", "FileFormats::PLN").arg(count2));
-                            }
-                        }
+                        throw 1;
                     }
-                    if (count3 != 1)
+                    coord.setLatitude(convertPDMSToDecimal(split[0]));
+                    coord.setLongitude(convertPDMSToDecimal(split[1]));
+                    coord.setAltitude(split[2].toDouble(&ok));
+                    if (!ok)
                     {
-                        setError(QObject::tr("Waypoint %1 does not have a unique position", "FileFormats::PLN").arg(count2));
-                        return;
+                        throw 5;
                     }
+                    m_waypoints.append(GeoMaps::Waypoint(coord, id));
                 }
+                catch (...)
+                {
+                    addWarning(QObject::tr("Position of waypoint %1 is not a valid position", "FileFormats::PLN").arg(count2));
+                }
+
             }
-            if (count2 == 0)
+            if (count3 != 1)
             {
-                setError(QObject::tr("File %1 does not contain way points", "FileFormats::PLN").arg(fileName));
+                setError(QObject::tr("Waypoint %1 does not have a unique position", "FileFormats::PLN").arg(count2));
                 return;
             }
         }
+
+        if (count2 == 0)
+        {
+            setError(QObject::tr("File %1 does not contain way points", "FileFormats::PLN").arg(fileName));
+            return;
+        }
+
+
     }
     if (count1 != 1)
     {

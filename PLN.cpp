@@ -28,35 +28,35 @@
 #include "DataFileAbstract.h"
 
 
-
-auto convertPDMSToDecimal(QString pdms) ->double
+// Converts a string of the form N53° 53' 55.87" or W166° 32' 40.78" to a decimal. Returns NAN on failure.
+double convertPDMSToDecimal(QString pdms)
 {
-    bool ok = false;
     QStringList split = pdms.split(u" "_qs);
     if (split.size() != 3)
     {
-        throw 1;
-    }
-    int const degree = split[0].chopped(1).remove(0, 1).toInt(&ok);
-    if (!ok)
-    {
-        throw 2;
-    }
-    int const minute = split[1].chopped(1).toInt(&ok);
-    if (!ok)
-    {
-        throw 3;
-    }
-    double const second = split[2].chopped(1).toDouble(&ok);
-    if (!ok)
-    {
-        throw 4;
+        return NAN;
     }
 
-    double const decimal = degree + (minute / 60.0) + (second / 3600);
+    bool ok = false;
+    auto degree = split[0].chopped(1).remove(0, 1).toInt(&ok);
+    if (!ok)
+    {
+        return NAN;
+    }
+    auto minute = split[1].chopped(1).toInt(&ok);
+    if (!ok)
+    {
+        return NAN;
+    }
+    auto second = split[2].chopped(1).toDouble(&ok);
+    if (!ok)
+    {
+        return NAN;
+    }
 
-    QChar const pol = pdms[0].toUpper();
+    auto decimal = degree + (minute / 60.0) + (second / 3600);
 
+    auto pol = pdms[0].toUpper();
     if ((pol == 'S') || (pol == 'W'))
     {
         return -decimal;
@@ -121,28 +121,22 @@ FileFormats::PLN::PLN(const QString& fileName)
 
                 auto pos = xmlReader.readElementText();
                 auto split = pos.split(u","_qs);
-                try
+                if (split.size() != 3)
                 {
-                    if (split.size() != 3)
-                    {
-                        throw 1;
-                    }
-                    bool ok = false;
-                    QGeoCoordinate coord;
-                    coord.setLatitude(convertPDMSToDecimal(split[0]));
-                    coord.setLongitude(convertPDMSToDecimal(split[1]));
-                    coord.setAltitude(split[2].toDouble(&ok));
-                    if (!ok)
-                    {
-                        throw 5;
-                    }
-                    m_waypoints.append(GeoMaps::Waypoint(coord, id));
+                    setError(QObject::tr("Position of waypoint %1 invalid", "FileFormats::PLN").arg(atcWaypointCounter));
+                    return;
                 }
-                catch (...)
+                bool ok = false;
+                QGeoCoordinate coord;
+                coord.setLatitude(convertPDMSToDecimal(split[0]));
+                coord.setLongitude(convertPDMSToDecimal(split[1]));
+                coord.setAltitude(split[2].toDouble(&ok));
+                if (!ok || !coord.isValid())
                 {
-                    addWarning(QObject::tr("Position of waypoint %1 is not a valid position", "FileFormats::PLN").arg(atcWaypointCounter));
+                    setError(QObject::tr("Position of waypoint %1 is not a valid position", "FileFormats::PLN").arg(atcWaypointCounter));
+                    return;
                 }
-
+                m_waypoints.append(GeoMaps::Waypoint(coord, id));
             }
             if (worldPositionCounter != 1)
             {

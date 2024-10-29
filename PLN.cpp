@@ -20,12 +20,8 @@
 
 
 #include <QFile>
-#include <QTextStream>
-#include <qxmlstream.h>
-#include <qnamespace.h>
-#include <qglobal.h>
-#include <qgeocoordinate.h>
-#include <qobject.h>
+#include <QGeoCoordinate>
+#include <QXmlStreamReader>
 
 #include "PLN.h"
 

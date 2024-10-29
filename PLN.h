@@ -48,7 +48,6 @@ public:
     PLN(const QString& fileName);
 
 
-
     //
     // Getter Methods
     //

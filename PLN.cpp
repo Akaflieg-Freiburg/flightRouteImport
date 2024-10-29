@@ -67,14 +67,6 @@ auto convertPDMSToDecimal(QString pdms) ->double
 
 FileFormats::PLN::PLN(const QString& fileName)
 {
-    bool ok = false;
-    int count1 = 0;
-    int count2 = 0;
-    int count3 = 0;
-    QString pos;
-    QString id;
-    QGeoCoordinate coord;
-    QStringList split;
     auto file = FileFormats::DataFileAbstract::openFileURL(fileName);
     auto success = file->open(QIODevice::ReadOnly);
     if (!success)
@@ -94,7 +86,9 @@ FileFormats::PLN::PLN(const QString& fileName)
         setError(QObject::tr("File %1 does not contain a flight plan", "FileFormats::PLN").arg(fileName));
         return;
     }
-    count1 = 0;
+
+
+    int count1 = 0;
     while(xmlReader.readNextStartElement())
     {
         if(xmlReader.name().compare("FlightPlan.FlightPlan", Qt::CaseInsensitive) != 0)
@@ -104,7 +98,8 @@ FileFormats::PLN::PLN(const QString& fileName)
         }
 
         count1++;
-        count2 = 0;
+
+        int count2 = 0;
         while(xmlReader.readNextStartElement())
         {
             if(xmlReader.name().compare("ATCWaypoint", Qt::CaseInsensitive) != 0)
@@ -114,8 +109,8 @@ FileFormats::PLN::PLN(const QString& fileName)
             }
 
             count2++;
-            id = xmlReader.attributes().value(u"id"_qs).toString();
-            count3 = 0;
+            auto id = xmlReader.attributes().value(u"id"_qs).toString();
+            int count3 = 0;
             while(xmlReader.readNextStartElement())
             {
                 if(xmlReader.name().compare("WorldPosition", Qt::CaseInsensitive) != 0)
@@ -125,14 +120,16 @@ FileFormats::PLN::PLN(const QString& fileName)
                 }
 
                 count3++;
-                pos = xmlReader.readElementText();
-                split = pos.split(u","_qs);
+                auto pos = xmlReader.readElementText();
+                auto split = pos.split(u","_qs);
                 try
                 {
                     if (split.size() != 3)
                     {
                         throw 1;
                     }
+                    bool ok = false;
+                    QGeoCoordinate coord;
                     coord.setLatitude(convertPDMSToDecimal(split[0]));
                     coord.setLongitude(convertPDMSToDecimal(split[1]));
                     coord.setAltitude(split[2].toDouble(&ok));

@@ -67,6 +67,7 @@ auto convertPDMSToDecimal(QString pdms) ->double
 
 FileFormats::PLN::PLN(const QString& fileName)
 {
+    // Open file and open QXmlStreamReader
     auto file = FileFormats::DataFileAbstract::openFileURL(fileName);
     auto success = file->open(QIODevice::ReadOnly);
     if (!success)
@@ -74,7 +75,6 @@ FileFormats::PLN::PLN(const QString& fileName)
         setError(QObject::tr("Cannot open PLN file %1 for reading.", "FileFormats::PLN").arg(fileName));
         return;
     }
-
     QXmlStreamReader xmlReader(file.data());
     if (!xmlReader.readNextStartElement())
     {
@@ -88,7 +88,7 @@ FileFormats::PLN::PLN(const QString& fileName)
     }
 
 
-    int count1 = 0;
+    int flightPlanCounter = 0;
     while(xmlReader.readNextStartElement())
     {
         if(xmlReader.name().compare("FlightPlan.FlightPlan", Qt::CaseInsensitive) != 0)
@@ -96,10 +96,9 @@ FileFormats::PLN::PLN(const QString& fileName)
             xmlReader.skipCurrentElement();
             continue;
         }
+        flightPlanCounter++;
 
-        count1++;
-
-        int count2 = 0;
+        int atcWaypointCounter = 0;
         while(xmlReader.readNextStartElement())
         {
             if(xmlReader.name().compare("ATCWaypoint", Qt::CaseInsensitive) != 0)
@@ -107,10 +106,10 @@ FileFormats::PLN::PLN(const QString& fileName)
                 xmlReader.skipCurrentElement();
                 continue;
             }
+            atcWaypointCounter++;
 
-            count2++;
             auto id = xmlReader.attributes().value(u"id"_qs).toString();
-            int count3 = 0;
+            int worldPositionCounter = 0;
             while(xmlReader.readNextStartElement())
             {
                 if(xmlReader.name().compare("WorldPosition", Qt::CaseInsensitive) != 0)
@@ -118,8 +117,8 @@ FileFormats::PLN::PLN(const QString& fileName)
                     xmlReader.skipCurrentElement();
                     continue;
                 }
+                worldPositionCounter++;
 
-                count3++;
                 auto pos = xmlReader.readElementText();
                 auto split = pos.split(u","_qs);
                 try
@@ -141,18 +140,18 @@ FileFormats::PLN::PLN(const QString& fileName)
                 }
                 catch (...)
                 {
-                    addWarning(QObject::tr("Position of waypoint %1 is not a valid position", "FileFormats::PLN").arg(count2));
+                    addWarning(QObject::tr("Position of waypoint %1 is not a valid position", "FileFormats::PLN").arg(atcWaypointCounter));
                 }
 
             }
-            if (count3 != 1)
+            if (worldPositionCounter != 1)
             {
-                setError(QObject::tr("Waypoint %1 does not have a unique position", "FileFormats::PLN").arg(count2));
+                setError(QObject::tr("Waypoint %1 does not have a unique position", "FileFormats::PLN").arg(atcWaypointCounter));
                 return;
             }
         }
 
-        if (count2 == 0)
+        if (atcWaypointCounter == 0)
         {
             setError(QObject::tr("File %1 does not contain way points", "FileFormats::PLN").arg(fileName));
             return;
@@ -160,7 +159,7 @@ FileFormats::PLN::PLN(const QString& fileName)
 
 
     }
-    if (count1 != 1)
+    if (flightPlanCounter != 1)
     {
         setError(QObject::tr("File %1 does not contain a unique flight plan", "FileFormats::PLN").arg(fileName));
         return;

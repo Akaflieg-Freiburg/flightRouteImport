@@ -32,7 +32,7 @@
 auto convertPDMSToDecimal(QString pdms) ->double
 {
     bool ok = false;
-    QStringList split = pdms.split(" ");
+    QStringList split = pdms.split(u" "_qs);
     if (split.size() != 3)
     {
         throw 1;
@@ -126,7 +126,7 @@ FileFormats::PLN::PLN(const QString& fileName)
                         {
                             count3++;
                             pos = xmlReader.readElementText();
-                            split = pos.split(",");
+                            split = pos.split(u","_qs);
                             try
                             {
                                 if (split.size() != 3)

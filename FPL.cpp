@@ -81,7 +81,7 @@ FileFormats::FPL::FPL(const QString& fileName)
                         }
                         else if(xmlReader.name().compare("lat", Qt::CaseInsensitive) == 0)
                         {
-                            if (m_coordinate.latitude() != qQNaN())
+                            if (!std::isnan(m_coordinate.latitude()))
                             {
                                 setError(QObject::tr("Waypoint %1 has more than one latitude", "FileFormats::FPL").arg(count3));
                                 return;
@@ -96,7 +96,7 @@ FileFormats::FPL::FPL(const QString& fileName)
                         }
                         else if(xmlReader.name().compare("lon", Qt::CaseInsensitive) == 0)
                         {
-                            if (m_coordinate.longitude() != qQNaN())
+                            if (!std::isnan(m_coordinate.longitude()))
                             {
                                 setError(QObject::tr("Waypoint %1 has more than one longitude", "FileFormats::FPL").arg(count3));
                                 return;
@@ -111,7 +111,7 @@ FileFormats::FPL::FPL(const QString& fileName)
                         }
                         else if(xmlReader.name().compare("elevation", Qt::CaseInsensitive) == 0)
                         {
-                            if (m_coordinate.altitude() != qQNaN())
+                            if (!std::isnan(m_coordinate.altitude()))
                             {
                                 setError(QObject::tr("Waypoint %1 has more than one elevation", "FileFormats::FPL").arg(count3));
                                 return;
